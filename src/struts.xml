@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="devMode" value="true"/>
+	<package name="default" extends="hibernate-default">
+		<action name="addUser" class="web.UserAction" method="add">
+			<result name="success" type="redirect">listUser</result>
+		</action>
+		<action name="listUser" class="web.UserAction" method="list">
+			<result name="success">/register.jsp</result>
+		</action>
+	</package>
+</struts>

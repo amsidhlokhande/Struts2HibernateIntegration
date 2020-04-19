@@ -1,0 +1,10 @@
+CREATE TABLE USERINFO(USER_ID INTEGER,
+         USER_NAME VARCHAR2(50),
+         USER_PASSWORD VARCHAR2(200),
+         USER_GENDER VARCHAR2(1),
+         USER_COUNTRY VARCHAR2(25),
+         USER_ABOUT_YOU VARCHAR2(500),
+         USER_MAILING_LIST VARCHAR2(1));
+ insert into userinfo values(1,'amsidhl','********@123','M','INDIA','I am Amsidh Lokhande','Y');
+         
+ select * from USERINFO;        
